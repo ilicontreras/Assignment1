@@ -272,8 +272,9 @@ z-index: 2;
 
 
     /* START OF VIDEO CODING */
-    video{
+    iframe{
         width: 60%;
+        height: 495px;
         position: fixed;
         z-index: 100;
         left: 20%;
