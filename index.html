@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/miniyoussef.PNG">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Youssef</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- We use "script" to link java scripts -->
+</head>
+
+<body>
+    <h1 class="fixed">FIND YOUSSEF</h1>
+
+    <div class="fixed" id="main">
+        <div class="row"><button class="menu leftbuttons" onclick="showcard()">Y O U S S E F</button><a href="info.html"
+                class="leftbuttons menu">I N F O</a> </div>
+        <div class="row imgrow"> <img id="animation" src="img/youssef.gif" class=""></div>
+        <div class="row"><button class="rightbuttons menu" onclick="showyvideo()">W A T C H</button><button class="rightbuttons menu"
+                onclick="showphotocarrousel()">F I N D</button></div>
+    </div>
+
+    <!-- START OF YOUSSEF'S CARD CODING -->
+    <div id="card" class="youssef hide">
+        <img id="twopeople" src="img/i&y.JPG">
+        <div class="container">
+            <p id="youssefstory"> This is Youssef.<br>He's a student at NYU Abu Dhabi majoring in Electrical Engineering
+                and minoring in Music. He spends an insane amount of time playing the guitar and spending time
+                with Ili.<br> Youssef was <b>DEFINITELY</b> not obligated to be the face of this project.
+            </p>
+        </div>
+    </div>
+
+    <!-- Coding of black background -->
+    <div id="black" class="background hide" onclick="hidecard()"></div>
+    <!-- When you add "hide" next to the class name the element will dissapear when linked to the JavaScript -->
+
+
+    <!-- START OF CARROUSEL CODING -->
+    <div id="photocarrousel" class="carrouselcontainer hide">
+        <div class="slides fade" id="s1">
+            <img src="img/FY1.jpg">
+            <div class="text">Youssef likes spending time at The Palms</div>
+        </div>
+
+        <div class="slides fade" id="s2">
+            <img src="img/FY2.jpg">
+            <div class="text">Marketplace never gets boring</div>
+        </div>
+
+        <div class="slides fade" id="s3">
+            <img src="img/FY3.jpg">
+            <div class="text">Youssef loves getting lost at the CS</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Next and previous buttons -->
+    </div>
+
+</body>
+
+<script src="script/myscript.js"></script>
+
+</html>
+
+<div id="blackcarrousel" class="backgroundcarrousel hide" onclick="photocarrousel()"></div>
+
+<!-- START OF VIDEO CODING -->
+ <video id="yvideo" class="hide" controls src="find youssef video FINAL.mp4"></video>
+

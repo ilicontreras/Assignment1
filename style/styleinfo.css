@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+@font-face {
+    font-family: thefont;
+    src: url('../fonts/mi.ttf');
+  }
+
+
+  img{
+    width: 300px;
+    object-fit: contain;
+    /* object fit makes the image to not stretch */
+  }
+
+  h1{
+    font-family: thefont;
+    font-size: 95px;
+    margin-bottom: 0%;
+  }
+
+  p{
+    font-family: "Nanum Pen Script";
+    font-size: 50px;
+    margin-right: 0%;
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+.ili{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* dots (.) are to call classes */
+}
+
+  .image{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 65px;
+  }
+
+  .text{
+    width: 65%;
+    display: flex;
+    /* add display flex when things don't want to center (after trying everything)*/
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  a{
+    font-family: thefont;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+    background-color:  rgb(240, 240, 240);
+    height: 50px;
+    width: 150px;
+    display: flex;
+    /* add display flex when things don't want to center (after trying everything)*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+ /* [OPTIONS] To center stuff: (in the container)
+  First: Text align: center
+  Second: Display: flex
+  Third: Justify content: center
+  Fourth: Align iterms: center */
+  }
+
+a:hover{
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+/* When you put (:) means you want an event to happen, in this case is "when mouse hovers hiperlink,
+ */
